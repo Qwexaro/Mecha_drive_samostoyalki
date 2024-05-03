@@ -1,0 +1,16 @@
+<script>
+let woditel = +prompt("Vvedi razmer dvumernogo massiva")
+let arr = new Array(woditel);
+let out = "\n";
+for(let i = 0; i < arr.length; i++){
+    arr[i] = new Array(woditel);
+}
+for(let i = 0; i < arr.length; i++){
+    for(let j = 0; j < arr[i].length; j++){
+        arr[i][j] = "Hello, world!"
+        out += arr[i][j] + "\t";
+    }
+    out += "\n\n";
+}
+console.log(out);
+</script>

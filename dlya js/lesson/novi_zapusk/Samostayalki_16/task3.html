@@ -1,0 +1,24 @@
+<script>
+    
+let arr = new Array(5);
+let out = "\n";
+for(let i = 0; i < arr.length; i++)
+{
+    arr[i] = new Array(5);
+}
+for(let i = 0; i < arr.length; i++)
+{
+    for(let j = 0; j < arr[i].length; j++){
+        arr[i][j] = Math.floor(Math.random()*41-20);
+        out += arr[i][j] + "\t";
+    }
+    out += "\n\n";
+}
+console.log(out);
+console.log("Glavnaya diagonal':");
+for(let i = 0; i < arr.length; i++) 
+{
+    console.log(arr[i][i]);
+}   
+
+</script>
