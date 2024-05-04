@@ -1,0 +1,46 @@
+<script>
+
+function Da_6(arr)
+{
+    let sum = 0;
+    let out = "\n"
+    for(let i = 0; i < arr.length; i++)
+    {
+        for(let j = 0; j < arr[i].length; j++)
+        {
+            out += arr[i][j] + "\t"
+        }
+        out += "\n\n"
+    }
+    
+    console.log(out);
+    console.log("Glavnaya diagonal':")
+    for(let i = 0; i < arr.length; i++) 
+    {
+        console.log(arr[i][i])
+    }
+
+    for(let i = 0; i < arr.length; i++) 
+    {
+        for(let j = 0; j < arr[i].length; j++) 
+        {
+            sum += arr[i][j];
+        }
+    }
+    console.log("Summa elementov: " + sum)
+}
+
+
+let tsiferki = []
+for(let i = 0; i < 5; i++) 
+{
+    tsiferki[i] = []
+    for(let j = 0; j < 5; j++) 
+    {
+        tsiferki[i][j] = Math.floor(Math.random()*41-20)
+    }
+}
+
+Da_6(tsiferki)
+
+</script>

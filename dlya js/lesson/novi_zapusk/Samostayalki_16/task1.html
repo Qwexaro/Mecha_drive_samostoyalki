@@ -1,15 +1,15 @@
 <script>
-let arr = new Array(2);
-let out = "\n";
+let arr = new Array(2)
+let out = "\n"
 for(let i = 0; i < arr.length; i++){
-    arr[i] = new Array(2);
+    arr[i] = new Array(2)
 }
 for(let i = 0; i < arr.length; i++){
     for(let j = 0; j < arr[i].length; j++){
-        arr[i][j] = Math.floor(Math.random()*41-20);
-        out += arr[i][j] + "\t";
+        arr[i][j] = Math.floor(Math.random()*41-20)
+        out += arr[i][j] + "\t"
     }
-    out += "\n\n";
+    out += "\n\n"
 }
-console.log(out);
+console.log(out)
 </script>
